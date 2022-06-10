@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.API", "CarPark.API\CarPark.API.csproj", "{316BABCA-5F76-47CE-BF88-AA11E6260A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Domain", "CarPark.Domain\CarPark.Domain.csproj", "{2AF44402-E9A5-4117-8512-38DB3B212A6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Infrastructure", "CarPark.Infrastructure\CarPark.Infrastructure.csproj", "{4630B5FF-FC89-41F0-A24E-8FE36423EBC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPark.Application", "CarPark.Application\CarPark.Application.csproj", "{DC582B34-0EE6-4D6C-99DA-2982256E7BD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{316BABCA-5F76-47CE-BF88-AA11E6260A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316BABCA-5F76-47CE-BF88-AA11E6260A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316BABCA-5F76-47CE-BF88-AA11E6260A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316BABCA-5F76-47CE-BF88-AA11E6260A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF44402-E9A5-4117-8512-38DB3B212A6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF44402-E9A5-4117-8512-38DB3B212A6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF44402-E9A5-4117-8512-38DB3B212A6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF44402-E9A5-4117-8512-38DB3B212A6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4630B5FF-FC89-41F0-A24E-8FE36423EBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4630B5FF-FC89-41F0-A24E-8FE36423EBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4630B5FF-FC89-41F0-A24E-8FE36423EBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4630B5FF-FC89-41F0-A24E-8FE36423EBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC582B34-0EE6-4D6C-99DA-2982256E7BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC582B34-0EE6-4D6C-99DA-2982256E7BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC582B34-0EE6-4D6C-99DA-2982256E7BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC582B34-0EE6-4D6C-99DA-2982256E7BD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
