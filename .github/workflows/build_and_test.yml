@@ -1,5 +1,8 @@
 name: Build and Test
 
+env:
+  WORKING_DIR: "src"
+  
 on:
   push:
     branches: [ "main" ]
@@ -18,8 +21,10 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
+      working-directory: ${{ env.WORKING_DIR }}
       run: dotnet restore
     - name: Build
+      working-directory: ${{ env.WORKING_DIR }}
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
