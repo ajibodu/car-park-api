@@ -10,6 +10,4 @@ public class User : BaseAuditEntity
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string? OtherName { get; set; }
-    
-    public virtual ICollection<Car> Cars { get; set; }
 }
