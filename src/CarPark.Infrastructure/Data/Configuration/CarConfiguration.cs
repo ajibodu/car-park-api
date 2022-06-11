@@ -13,10 +13,6 @@ public class CarConfiguration : IEntityTypeConfiguration<Car>
         builder.Property(x => x.PlateNo).IsRequired();
         builder.HasIndex(i => i.PlateNo);
 
-        builder.HasOne(p => p.User)
-            .WithMany(c => c.Cars)
-            .HasForeignKey(c => c.UserId);
-
         builder.HasData(new List<Car>
         {
             new()

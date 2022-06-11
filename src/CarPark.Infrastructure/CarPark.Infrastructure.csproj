@@ -26,4 +26,8 @@
       <ProjectReference Include="..\CarPark.Application\CarPark.Application.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Data\Migrations" />
+    </ItemGroup>
+
 </Project>
