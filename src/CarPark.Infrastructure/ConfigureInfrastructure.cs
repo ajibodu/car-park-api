@@ -1,3 +1,4 @@
+using CarPark.Application.Interface;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,8 @@ public static class ConfigureInfrastructure
             .UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()))
 #endif
             .UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+
+        services.AddScoped<ICarParkDbContext>(option => option.GetService<CarParkDbContext>());
         return services;
     }
 }

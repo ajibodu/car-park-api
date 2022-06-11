@@ -1,4 +1,5 @@
 using System.Reflection;
+using CarPark.Application.Interface;
 using CarPark.Core.Entities;
 using CarPark.Core.Entities.Base;
 using Microsoft.EntityFrameworkCore;
@@ -6,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace CarPark.Infrastructure;
 
-public class CarParkDbContext : DbContext
+public class CarParkDbContext : DbContext, ICarParkDbContext
 {
     public DbSet<Car> Cars { get; set; }
     public DbSet<User> Users { get; set; }

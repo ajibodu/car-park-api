@@ -11,5 +11,29 @@ namespace CarPark.API.Controllers
     [ApiController]
     public class CarController : ControllerBase
     {
+        // [HttpGet]
+        // public async Task<IActionResult> Get()
+        // {
+        //     
+        // }
+        //
+        // [HttpGet]
+        // public async Task<IActionResult> Approaching()
+        // {
+        //     
+        // }
+        //
+        // [HttpPost]
+        // public async Task<IActionResult> DriveIn()
+        // {
+        //     
+        // }
+        //
+        // [HttpPost]
+        // public async Task<IActionResult> DriveOut()
+        // {
+        //     
+        // }
+        
     }
 }
