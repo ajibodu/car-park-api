@@ -3,6 +3,7 @@ using System;
 using CarPark.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarPark.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(CarParkDbContext))]
-    partial class CarParkDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220611232318_IsBusyToParkingSpot")]
+    partial class IsBusyToParkingSpot
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,11 +93,11 @@ namespace CarPark.Infrastructure.Data.Migrations
                         .HasColumnType("datetime(6)")
                         .HasColumnName("delete_date_utc");
 
-                    b.Property<DateTimeOffset?>("DriveInAt")
+                    b.Property<DateTimeOffset>("DriveInAt")
                         .HasColumnType("datetime(6)")
                         .HasColumnName("drive_in_at");
 
-                    b.Property<DateTimeOffset?>("DriveOutAt")
+                    b.Property<DateTimeOffset>("DriveOutAt")
                         .HasColumnType("datetime(6)")
                         .HasColumnName("drive_out_at");
 
@@ -103,7 +105,7 @@ namespace CarPark.Infrastructure.Data.Migrations
                         .HasColumnType("char(36)")
                         .HasColumnName("parking_spot_id");
 
-                    b.Property<Guid?>("ReservationId")
+                    b.Property<Guid>("ReservationId")
                         .HasColumnType("char(36)")
                         .HasColumnName("reservation_id");
 
@@ -139,7 +141,7 @@ namespace CarPark.Infrastructure.Data.Migrations
                         .HasColumnType("tinyint(1)")
                         .HasColumnName("in_process");
 
-                    b.Property<DateTimeOffset?>("InProcessExpireAt")
+                    b.Property<DateTimeOffset>("InProcessExpireAt")
                         .HasColumnType("datetime(6)")
                         .HasColumnName("in_process_expire_at");
 

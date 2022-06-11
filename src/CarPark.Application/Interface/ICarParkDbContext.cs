@@ -10,4 +10,6 @@ public interface ICarParkDbContext
     public DbSet<Parking> Parkings { get; }
     public DbSet<ParkingSpot> ParkingSpots { get; }
     public DbSet<Reservation> Reservations { get; }
+
+    public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

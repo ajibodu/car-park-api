@@ -11,5 +11,4 @@ public class Reservation : BaseAuditEntity
     public DateTimeOffset Start { get; set; }
     public DateTimeOffset End { get; set; }
     public ReservationStatus Status { get; set; }
-    
 }
